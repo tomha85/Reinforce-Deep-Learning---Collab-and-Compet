@@ -4,15 +4,13 @@ The goal  of project is train 2 agents in Unity environment to play tennis, two 
 
 The task is episodic, and in order to solve the environment, the agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents).
 
-After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 2 (potentially different) scores. We then take the maximum of these 2 scores.
-This yields a single score for each episode.
 The environment is considered solved, when the average (over 100 episodes) of those scores is at least +0.5.
 
 ### 2. Learning Algorithm
 We use DDPG algorithm to train,an Actor-Critic method.
-The observation space consists of 8 variables corresponding to the position and velocity of the ball and racket, the environment returns 3 stacked observation spaces at each timestep, so the returned variable has 24 dimensions 
-We use same Actor and Critic networks for both the players. we require 2 Neural Networks. One to estimate the best action for a particular state (One racket at a time) and another one to estimate the Value Function. 
-We add the experiences of both the players to the same replay buffer and sample from it to compute the loss.All steps' **`(State, Action, Reward, Next State)`**   tuples  from each one of the rackets are saved in to a queue in memory. At each time steps **`2`** learning passes are performed, in which a mini-batch of **`256`** tuples are selected to update the Neural Network weights.
+The observation space is included of 8 variables with the position, velocity of the ball and racket, the environment returns 3 stacked observation spaces at each timestep, so the returned variable has 24 dimensions 
+We use same Actor and Critic networks for both the players. we require 2 Neural Networks. One to estimate the best action for a particular state, and another one to estimate the Value Function. 
+We add the experiences of both the players to the same replay buffer and sample from it to compute the loss. All steps (State, Action, Reward, Next State)  tuples  from each one of the rackets are saved in to a queue in memory.
 Adam optimizer with an actor learning rate of 0.001, critic learning rate of 0.001,batch size of 128, discount factor of 0.99.
 
 ### 3. Results
