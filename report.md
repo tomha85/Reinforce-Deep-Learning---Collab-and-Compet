@@ -21,8 +21,8 @@ The code uses the following Hyper-parameters:
 - *`Neurons in 2° layer`*  =  128
 - *`Gamma`*  =  0.99
 - *`TAU`*  =  1e-3
-- *`Actor Learning Rate`*  =  1e-3
-- *`Critic Learning Rate`*  =  1e-3
+- *`Actor LR`*  =  1e-3
+- *`Critic LR`*  =  1e-3
 - *`Batch Size`*  =  128
 
 ---
