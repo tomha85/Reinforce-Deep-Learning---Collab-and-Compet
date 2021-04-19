@@ -26,12 +26,12 @@ The code uses the following Hyper-parameters:
 - *`Batch Size`*  =  128
 
 ---
-The figure below shows average rewards per episode as the agent is being trained. The training is terminated when the average reward per episode reaches 0.5. We were able to solve the environement in 2052 episodes.
 
 ![image](https://user-images.githubusercontent.com/31414852/115264247-205f7500-a104-11eb-8444-c0943e0869e2.png)
 
 ![image](https://user-images.githubusercontent.com/31414852/115264271-26555600-a104-11eb-80f5-4abd16452c0b.png)
 
+The training is terminated when the average reward per episode reaches 0.5. We were able to solve the environement in 1616 episodes.
 ### 4. Future Work
 We trained a the environment using DDPG algorithm. In future we can explore other algorithms like MADDPG.
 We can also tune the hyperparameters further to solve the environment in fewer number of episodes. 
