@@ -41,7 +41,7 @@ The code uses parameters:
 
 ![image](https://user-images.githubusercontent.com/31414852/115264271-26555600-a104-11eb-80f5-4abd16452c0b.png)
 
-The training is terminated when the average reward per episode reaches 0.5. We were able to solve the environement in 1616 episodes.
+The training is stoped and average rewards is more than 0.5. We can solve the environement in 1616 episodes.
 ### 4. Future Work
 Adjust parameters affect the way of training. So we continue to get best parameters to get good performance of the game.
 We also try anothe method and algorithms like multi-agent PPO or multi-agent DQN
