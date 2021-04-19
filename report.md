@@ -7,6 +7,9 @@ The task is episodic, and in order to solve the environment, the agents must get
 The environment is considered solved, when the average (over 100 episodes) of those scores is at least +0.5.
 
 ### 2. Learning Algorithm
+
+![image](https://user-images.githubusercontent.com/31414852/115268234-0fb0fe00-a108-11eb-9540-38da7214d361.png)
+
 We use DDPG algorithm to train,an Actor-Critic method.
 The observation space is included of 8 variables with the position, velocity of the ball and racket, the environment returns 3 stacked observation spaces at each timestep, so the returned variable has 24 dimensions 
 We use same Actor and Critic networks for both the players. we require 2 Neural Networks. One to estimate the best action for a particular state, and another one to estimate the Value Function. 
