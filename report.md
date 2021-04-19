@@ -26,8 +26,8 @@ Adam optimizer with an actor learning rate of 0.001, critic learning rate of 0.0
 
 The code uses parameters:
 
-BUFFER_SIZE = int(1e5)  # replay buffer size
-BATCH_SIZE = 128        # minibatch size
+*BUFFER_SIZE = int(1e5)*  # replay buffer size
+*BATCH_SIZE = 128 *       # minibatch size
 GAMMA = 0.99            # discount factor
 TAU = 1e-3              # for soft update of target parameters
 LR_ACTOR = 1e-3         # learning rate of the actor
