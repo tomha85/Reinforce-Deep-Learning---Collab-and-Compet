@@ -40,7 +40,7 @@ The code uses parameters:
 
 ![image](https://user-images.githubusercontent.com/31414852/115264271-26555600-a104-11eb-80f5-4abd16452c0b.png)
 
-The training is stopped at 1161 episodes and average rewards is more than 0.5. We can solve the environement in 1616 episodes.
+The training is stopped at 1616 episodes and average rewards is more than 0.5. We can solve the environement in 1616 episodes.
 
 ### 4. Future Work
 Adjust parameters affect the way of training. So we continue to get best parameters to get good performance of the game.
