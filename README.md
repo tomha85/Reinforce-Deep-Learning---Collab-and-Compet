@@ -1,4 +1,4 @@
-# Reinforce-Deep-Learning--Collab-and-Compet
+# Reinforce-Deep-Learning-Collab-and-Compet
 [image1]:https://github.com/tomha85/Reinforce-Deep-Learning---Collab-and-Compet/blob/main/p3.gif
 ### Introduction
 
