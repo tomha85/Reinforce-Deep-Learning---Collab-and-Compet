@@ -24,16 +24,15 @@ Adam optimizer with an actor learning rate of 0.001, critic learning rate of 0.0
 ### 3. Results
 #### Selected Hyper-parameters
 
-The code uses the following Hyper-parameters:
+The code uses parameters:
 
-- *`Number of Hidden Layers`*  =  2
-- *`Neurons in 1° layer`*  =  128
-- *`Neurons in 2° layer`*  =  128
-- *`Gamma`*  =  0.99
-- *`TAU`*  =  1e-3
-- *`Actor LR`*  =  1e-3
-- *`Critic LR`*  =  1e-3
-- *`Batch Size`*  =  128
+BUFFER_SIZE = int(1e5)  # replay buffer size
+BATCH_SIZE = 128        # minibatch size
+GAMMA = 0.99            # discount factor
+TAU = 1e-3              # for soft update of target parameters
+LR_ACTOR = 1e-3         # learning rate of the actor
+LR_CRITIC = 1e-3        # learning rate of the critic
+WEIGHT_DECAY = 0        # L2 weight decay
 
 ---
 
