@@ -1,4 +1,11 @@
 
+### Introduction
+
+Environment solved criterion: The task is episodic, and in order to solve the environment, the agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents). Specifically,
+
+After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 2 (potentially different) scores. We then take the maximum of these 2 scores.
+This yields a single score for each episode.
+The environment is considered solved, when the average (over 100 episodes) of those scores is at least +0.5.
 
 ### 2. Learning Algorithm
 We train the network using DDPG algorithm. For the Actor, we use a three layer MLP with 128 and 128 neurons respectively in hidden layers. The state vector is the 8 dimensional vector described in section 1. The output vector is of size 2. We use same Actor and Critic networks for both the players. We add the experiences of both the players to the same replay buffer and sample from it to compute the loss.
