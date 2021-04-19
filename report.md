@@ -16,7 +16,7 @@ We train the network using Adam optimizer with an actor learning rate of 0.001, 
 
 The code uses the following Hyper-parameters:
 
-- **`Number of Hidden Layers`**  =  2
+- *`Number of Hidden Layers`*  =  2
 - **`Neurons in 1° layer`**  =  128
 - **`Neurons in 2° layer`**  =  128
 - **`Gamma`**  =  0.99
