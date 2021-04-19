@@ -14,8 +14,7 @@ We use DDPG algorithm to train, an Actor-Critic method. Multi-agent DDPG class u
 
 ![image](https://user-images.githubusercontent.com/31414852/115271074-f2c9fa00-a10a-11eb-978b-c2b3cdd7698c.png)
 
-The observation space is included of 8 variables with the position, velocity of the ball and racket, the environment returns 3 stacked observation spaces at each timestep, so the returned variable has 24 dimensions. We add the experiences of both the agents to the same replay buffer and sample from it to compute the loss. All steps (State, Action, Reward, Next State)  tuples  from each one of the rackets are saved in to a queue in memory.
-
+The observation is included of 8 variables with the position, velocity of the ball and racket, the environment gets 3 stacked observation at each timestep, so the returned variable has 24 dimensions. We add the experiences of both the agents to the same replay buffer and sample them to compute the loss. All steps (State, Action, Reward, Next State)  tuples  from each one of the rackets are saved in to a queue in memory.
 
 We use same Actor and Critic networks for both agents, and 2 Neural Networks. One to estimate the best action for a particular state, and another one to estimate the Value Function.
 
