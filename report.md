@@ -17,13 +17,13 @@ We train the network using Adam optimizer with an actor learning rate of 0.001, 
 The code uses the following Hyper-parameters:
 
 - *`Number of Hidden Layers`*  =  2
-- **`Neurons in 1° layer`**  =  128
-- **`Neurons in 2° layer`**  =  128
-- **`Gamma`**  =  0.99
-- **`TAU`**  =  1e-3
-- **`Actor Learning Rate`**  =  1e-3
-- **`Critic Learning Rate`**  =  1e-3
-- **`Batch Size`**  =  128
+- *`Neurons in 1° layer`*  =  128
+- *`Neurons in 2° layer`*  =  128
+- *`Gamma`*  =  0.99
+- *`TAU`*  =  1e-3
+- *`Actor Learning Rate`*  =  1e-3
+- *`Critic Learning Rate`*  =  1e-3
+- *`Batch Size`*  =  128
 
 ---
 The figure below shows average rewards per episode as the agent is being trained. The training is terminated when the average reward per episode reaches 0.5. We were able to solve the environement in 2052 episodes.
