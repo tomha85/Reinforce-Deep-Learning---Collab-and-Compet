@@ -10,7 +10,10 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 ![image](https://user-images.githubusercontent.com/31414852/115268320-26efeb80-a108-11eb-9157-6ae5a1a51af4.png)
 
-We use DDPG algorithm to train,an Actor-Critic method.
+We use DDPG algorithm to train,an Actor-Critic method. Multi-agent DDPG class uses 2 DDPG agents
+
+![image](https://user-images.githubusercontent.com/31414852/115271074-f2c9fa00-a10a-11eb-978b-c2b3cdd7698c.png)
+
 The observation space is included of 8 variables with the position, velocity of the ball and racket, the environment returns 3 stacked observation spaces at each timestep, so the returned variable has 24 dimensions.
 
 We use same Actor and Critic networks for both agents, and 2 Neural Networks. One to estimate the best action for a particular state, and another one to estimate the Value Function.
