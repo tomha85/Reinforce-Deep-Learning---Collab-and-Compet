@@ -11,9 +11,12 @@ The environment is considered solved, when the average (over 100 episodes) of th
 ![image](https://user-images.githubusercontent.com/31414852/115268320-26efeb80-a108-11eb-9157-6ae5a1a51af4.png)
 
 We use DDPG algorithm to train,an Actor-Critic method.
-The observation space is included of 8 variables with the position, velocity of the ball and racket, the environment returns 3 stacked observation spaces at each timestep, so the returned variable has 24 dimensions 
-We use same Actor and Critic networks for both the players. we require 2 Neural Networks. One to estimate the best action for a particular state, and another one to estimate the Value Function. 
+The observation space is included of 8 variables with the position, velocity of the ball and racket, the environment returns 3 stacked observation spaces at each timestep, so the returned variable has 24 dimensions.
+
+We use same Actor and Critic networks for both agents, and 2 Neural Networks. One to estimate the best action for a particular state, and another one to estimate the Value Function.
+
 We add the experiences of both the players to the same replay buffer and sample from it to compute the loss. All steps (State, Action, Reward, Next State)  tuples  from each one of the rackets are saved in to a queue in memory.
+
 Adam optimizer with an actor learning rate of 0.001, critic learning rate of 0.001,batch size of 128, discount factor of 0.99.
 
 ### 3. Results
